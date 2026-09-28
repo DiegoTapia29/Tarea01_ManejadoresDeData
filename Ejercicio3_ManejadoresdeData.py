@@ -6,7 +6,7 @@ import string
 
 # 1. Normalización de texto y manejo de excepciones
 class TextoVacioError(Exception):
-    """Excepción lanzada cuando el texto de entrada está vacío o no tiene palabras válidas."""
+    """Excepción arrojada cuando el texto de entrada está vacío o no tiene palabras válidas."""
     pass
 
 def normalizar_texto(texto):
@@ -46,4 +46,5 @@ class TablaHashPropia:
         indice = self._hash(palabra)
         bucket = self.buckets[indice]
         
-        # Resolución de colisiones por encadenamie
+        # Resolución de colisiones por encadenamiento
+        
